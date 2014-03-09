@@ -5,6 +5,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  margin:0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +47,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:1000px;
   margin:0 auto;
 }
 
@@ -79,7 +80,7 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  /*border-bottom:1px solid #e5e5e5;*/
 }
 
 dt {
@@ -93,10 +94,23 @@ th {
 
 img {
   max-width:100%;
+  display: block;
+  position: relative;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+#row img {
+  display: block;
+  margin: auto;
+  padding-bottom: 10px;
+
+  clip: rect(0, 200px, 200px, 0);
+  position: absolute;
 }
 
 header {
-  width:270px;
+  width:230px;
   float:left;
   position:fixed;
 }
@@ -160,7 +174,8 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:700px;
+  height:100%;
   float:right;
   padding-bottom:50px;
 }
@@ -205,6 +220,7 @@ footer {
     border-width:1px 0;
     padding:20px 0;
     margin:0 0 20px;
+    height: 100%;
   }
   
   header a small {
